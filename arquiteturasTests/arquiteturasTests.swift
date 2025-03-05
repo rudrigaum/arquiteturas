@@ -19,12 +19,23 @@ final class arquiteturasTests: XCTestCase {
     }
     
     func testRegister() throws {
+        var userModel = UserModel()
+        
+        let exp = expectation(description: "Check Loing is oK")
         let manager = UserManager(business: UserBusiness())
         
-        manager.register(email: "teste@teste.com", password: "a12345") { userModel in
-            print(userModel)
+        manager.register(email: "teste@teste.com", password: "a12345") { user in
+            print(user)
+            userModel = user
         } failureHandler: { error in
             print(error)
+        }
+        
+        waitForExpectations(timeout: 30) { error in
+            if let error = error {
+                XCTFail("Error Timeout: \(error)")
+            }
+            XCTAssertEqual(userModel != nil, true)
         }
     }
     
