@@ -17,6 +17,26 @@ final class arquiteturasTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    func testRegister() throws {
+        let manager = UserManager(business: UserBusiness())
+        
+        manager.register(email: "teste@teste.com", password: "a12345") { userModel in
+            print(userModel)
+        } failureHandler: { error in
+            print(error)
+        }
+    }
+    
+    func testLogin() throws {
+        let manager = UserManager(business: UserBusiness())
+
+        manager.login(email: "teste@teste.com", password: "a12345") { usermodel in
+            print(usermodel)
+        } failureHandler: { error in
+            print(error)
+        }
+    }
 
     func testExample() throws {
         // This is an example of a functional test case.

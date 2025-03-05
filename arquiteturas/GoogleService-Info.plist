@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1042036096490-i7nc219oqldf3bv1sj11h85vvsm9k2ff.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1042036096490-i7nc219oqldf3bv1sj11h85vvsm9k2ff</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCzfWKkH1G_EnHo_mp-6vrTznA8FRiIzpI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1042036096490</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.rudrigo.arquiteturas</string>
+	<key>PROJECT_ID</key>
+	<string>aulafirebird-3186d</string>
+	<key>STORAGE_BUCKET</key>
+	<string>aulafirebird-3186d.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1042036096490:ios:b9f3c4de396e856889c693</string>
+</dict>
+</plist>
