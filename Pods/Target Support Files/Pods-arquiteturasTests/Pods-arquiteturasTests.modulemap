@@ -1,6 +1,0 @@
-framework module Pods_arquiteturasTests {
-  umbrella header "Pods-arquiteturasTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
