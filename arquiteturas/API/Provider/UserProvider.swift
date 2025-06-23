@@ -20,7 +20,7 @@ class UserProvider: UserProviderProtocol {
         let body: NSDictionary = parameters[Constants.ParametersKeys.body] as! NSDictionary
         let userModel = body[Constants.ParametersKeys.userModel] as! UserModel
         
-        self.auth.signIn(withEmail: userModel.email, link: userModel.password) { (result, error) in
+        self.auth.signIn(withEmail: userModel.email, password: userModel.password) { (result, error) in
             if let error = error {
                 completionHandler(.failure(error))
             } else {
